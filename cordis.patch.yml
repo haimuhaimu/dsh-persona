@@ -6,5 +6,7 @@
         activePersona: "an-ruotong"
         # 状态文件路径；留空默认 ~/.dsh/persona-state.json。
         statePath: ""
+        # 跨会话记忆文件路径；留空默认 ~/.dsh/persona-memory.json。
+        memoryPath: ""
         # 可选：追加自定义人设（覆盖/补充内置的 an-ruotong / yan-guan / lao-jie / default）。
         personas: []
