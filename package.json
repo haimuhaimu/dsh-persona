@@ -1,0 +1,23 @@
+{
+  "name": "dsh-persona",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness plugin: give the agent a switchable, persistent persona (人设) — an-ruotong / yan-guan / lao-jie built in, plus user-defined personas. Injects persona context before each turn and adds switch_persona / list_personas tools.",
+  "type": "module",
+  "main": "index.js",
+  "files": ["index.js", "personas.js", "cordis.patch.yml"],
+  "scripts": {
+    "prepare": "echo 'No build needed for JS plugin'"
+  },
+  "keywords": ["deepseek-harness", "dsh", "dsh-plugin", "persona", "character", "agent"],
+  "license": "MIT",
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "*",
+    "@deepseek-ai/dsh-tools": "*",
+    "@deepseek-ai/dsh-llm": "*"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

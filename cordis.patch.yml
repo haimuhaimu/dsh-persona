@@ -1,0 +1,10 @@
+- insert:
+    - id: persona
+      name: dsh-persona
+      config:
+        # 首次运行的默认人设 id；之后以运行时 switch_persona 的选择为准（持久化到 statePath）。
+        activePersona: "an-ruotong"
+        # 状态文件路径；留空默认 ~/.dsh/persona-state.json。
+        statePath: ""
+        # 可选：追加自定义人设（覆盖/补充内置的 an-ruotong / yan-guan / lao-jie / default）。
+        personas: []
