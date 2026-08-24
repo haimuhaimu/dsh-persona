@@ -6,7 +6,8 @@
   "main": "index.js",
   "files": ["index.js", "personas.js", "cordis.patch.yml"],
   "scripts": {
-    "prepare": "echo 'No build needed for JS plugin'"
+    "prepare": "echo 'No build needed for JS plugin'",
+    "test": "node --test"
   },
   "keywords": ["deepseek-harness", "dsh", "dsh-plugin", "persona", "character", "agent", "memory"],
   "license": "MIT",

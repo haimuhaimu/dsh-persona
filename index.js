@@ -69,7 +69,7 @@ function persistActiveId(statePath, id) {
  * 文件不存在或损坏时从空记忆开始。
  */
 function loadMemory(path) {
-  const store = {}
+  const store = Object.create(null)
   try {
     const parsed = JSON.parse(readFileSync(path, 'utf8'))
     const memories = parsed && typeof parsed === 'object' && !Array.isArray(parsed)
